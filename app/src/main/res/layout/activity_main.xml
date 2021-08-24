@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout><LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <data>
+        <variable
+            name="myName"
+            type="com.example.aboutmeapp.MyName" />
+    </data>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingTop="8dp"
+        android:gravity="center"
+        android:text="Fedy Belaid"
+        style="@style/textStyle" />
+
+    <EditText
+        android:id="@+id/name_edit"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="match_parent"
+        android:hint="What is your nickname?"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Done" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/textStyle"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/starImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/yellow_star_name"
+        app:srcCompat="@android:drawable/star_big_on" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/bioText"
+                style="@style/textStyle"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:lineSpacingMultiplier="1.5"
+                android:layout_height="wrap_content"
+                android:text="@string/bio" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout></layout>
+
